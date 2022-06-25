@@ -170,11 +170,16 @@ p {
 }
  
 
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* Герой */
 .hero {
     background-color: var(--background-hero-footer);
     text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .hero-title {
@@ -208,11 +213,6 @@ p {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid transparent;
     
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 /* Особливості */
