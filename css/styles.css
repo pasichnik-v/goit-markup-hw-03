@@ -34,25 +34,54 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* Шрифти */
-/* Logo Raleway 700 */
-/*Контакти шапка Roboto 500 */
-/* Контакти футер Roboto 400 */
-/* H1 Roboto 900 */
-/* Hero button Roboto 700 */
-/* H2+H3 Roboto 700 */
-/* Параграф Roboto 400 */
-/* Фильтри портфолио Roboto 500 */
+/* Normalize */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
-/* Забираємо крапки */
 .list {
     list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+address {
+    font-style: normal;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0px;
+}
+
 
 /* шапка */
 .header {
     background-color: #ffffff;
 }
+.container {
+    display: flex;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    outline: 1px solid tomato;
+}
+
 
 /* Logo header+footer */
 .logo {
@@ -61,6 +90,8 @@ body {
     line-height: 1.19;
     font-weight: 700;
     text-decoration: none;
+    /* padding-top: 60px;
+    padding-bottom: 20px; */
 }
 .web-logo {
     color: var(--accent-color);
@@ -78,14 +109,39 @@ body {
 }
 
 /* Навігація */
+.header-main {
+    align-items: center;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
 .site-nav {
+    display: flex;
+    margin-left: 93px;
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+   
 }
+.site-nav .item {
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+    
+}
+
 .site-nav .link {
-    text-decoration: none;
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+   
     color: var(--primary-text-color);
+
+    text-decoration: none;
+    
 }
 .site-nav .link.current,
 .site-nav .link:hover,
@@ -94,24 +150,30 @@ body {
 }
 
 .header-contact {
+    display: flex;
+    margin-left: auto;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.header-contact .header-contactlink {
+.header-contact .link {
     text-decoration: none;
     color: var(--secondary-text-color);
 }
-.header-contact .header-contactlink:hover,
-.header-contact .header-contactlink:focus {
+.header-contact .link:hover,
+.header-contact .link:focus {
     color: var(--accent-color);
+}
+.header-contact .item+.item {
+    margin-left: 50px;
 }
  
 
 
 /* Герой */
 .hero {
-background-color: var(--background-hero-footer);
+    background-color: var(--background-hero-footer);
+    text-align: center;
 }
 
 .hero-title {
@@ -119,43 +181,74 @@ background-color: var(--background-hero-footer);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-top: 200px;
 }
 
 
 /* Потрібно розібратися з центруванням */
 .hero-button {
+    margin-bottom: 200px;
+    display: inline-block;
+    min-width: 200px;
+    height: 50px;
     background-color: var(--background-hero-button);
     color: var(--full-white-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88;
-    display: flex;
     align-items: center;
-    text-align: center;
+    line-height: 1.88;
     letter-spacing: 0.06em;
+    padding: 10px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 2px solid tomato;
+}
 
 /* Особливості */
 .features {
+    padding-top: 93px;
+    padding-bottom: 0px;
+/* background-color: #188ce8; */
 
 }
 .features-title {
 visibility: hidden;
+margin-bottom: 0px;
 }
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.features-list .item {
+    width: 270px;
+    margin-right: 30px;
+}
+.features-list .item:nth-child(4n) {
+    margin-right: 0px;
+}
+
 
 .features-head {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.14;
+    margin-bottom: 10px;
 }
 
 .features-text {
+    margin-bottom: 0px;
     color: var(--secondary-text-color);
 
     line-height: 1.71;
@@ -163,7 +256,9 @@ visibility: hidden;
 
 
 /* проекти */
-.example {}
+.example {
+    /* background-color: green; */
+}
 
 .example-title,
  .team-title {
@@ -171,10 +266,14 @@ visibility: hidden;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
 }
 /* Наша команда */
 .team {
     background-color: var(--background-section);
+    padding-top: 0px;
+    /* background-color: aqua; */
 }
 
 .team-head {
@@ -197,7 +296,13 @@ line-height: 1.19;
 
 /* Підвал */
 .footer {
-    background-color: #2f303a;
+    background-color: var(--background-hero-footer);
+}
+/* .footer .container {
+    display: block
+} */
+.address {
+    padding-bottom: 60px;
 }
 .footer-address {
     text-decoration: none;
