@@ -73,7 +73,7 @@ p {
 /* шапка */
 .header {
     background-color: #ffffff;
-    border: 1px solid rgba(236, 236, 236, 1);
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 .container {
     display: flex;
@@ -136,8 +136,8 @@ p {
 
 .site-nav .link {
     display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 32px;
+    padding-bottom: 32px;
    
     color: var(--primary-text-color);
 
@@ -178,8 +178,8 @@ p {
 .hero {
     background-color: var(--background-hero-footer);
     text-align: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -190,13 +190,11 @@ p {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
-    padding-top: 200px;
 }
 
 
 /* Потрібно розібратися з центруванням */
 .hero-button {
-    margin-bottom: 200px;
     display: inline-block;
     min-width: 200px;
     height: 50px;
@@ -217,7 +215,7 @@ p {
 
 /* Особливості */
 .features {
-    padding-top: 93px;
+    padding-top: 94px;
     padding-bottom: 0px;
 /* background-color: #188ce8; */
 
@@ -293,7 +291,7 @@ font-size: 0px;
 /* Наша команда */
 .team {
     background-color: var(--background-section);
-    padding-top: 0px;
+    padding-top: 94px;
     /* background-color: aqua; */
 }
 .main-team {
@@ -309,9 +307,12 @@ font-size: 0px;
 .team-list .team-link:nth-child(4n) {
     margin-right: 0px;
 }
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .team-head {
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -326,6 +327,7 @@ font-size: 0px;
 color: var(--secondary-text-color);
 font-size: 16px;
 line-height: 1.19;
+margin-bottom: 0px;
 }
 
 
@@ -333,17 +335,16 @@ line-height: 1.19;
 /* Підвал */
 .footer {
     background-color: var(--background-hero-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .main-footer {
     display: block;
-    padding-top: 60px;
 }
 .main-logo {
     margin-bottom: 20px;
 }
-.address {
-    padding-bottom: 60px;
-}
+
 .address .item {
     margin-bottom: 9px;
 }
@@ -360,7 +361,6 @@ line-height: 1.19;
 .footer-contact {
     text-decoration: none;
     font-style: normal;
-
     line-height: 1.71;
     color: var(--partial-white-color)
 }
@@ -410,7 +410,7 @@ line-height: 1.19;
 }
 .projects {
     display: block;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 .project-title {
     visibility: hidden;
@@ -438,9 +438,10 @@ line-height: 1.19;
 }
 .link-down-part {
     border: 1px solid rgba(238, 238, 238, 1);
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 .project-head {
-    margin-top: 20px;
     margin-bottom: 4px;
     padding-left: 24px;
     padding-right: 24px;
@@ -450,9 +451,9 @@ line-height: 1.19;
     letter-spacing: 0.06em;
 }
 .project-text {
-    margin-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
+    margin-bottom: 0px;
     color: var(--secondary-text-color);
 
     font-size: 16px;
