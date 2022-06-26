@@ -438,21 +438,16 @@ margin-bottom: 0px;
 }
 .link-down-part {
     border: 1px solid rgba(238, 238, 238, 1);
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 24px;
 }
 .project-head {
     margin-bottom: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 .project-text {
-    padding-left: 24px;
-    padding-right: 24px;
     margin-bottom: 0px;
     color: var(--secondary-text-color);
 
